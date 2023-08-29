@@ -32,19 +32,12 @@ body {
   gap: 30px;
   height: 100vh;
   padding: 80px 0;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .hero-text {
   max-width: 510px;
   text-align: center;
-}
-
-
-p,
-h5,
-h1 {
-  margin: 0;
 }
 
 button {
@@ -105,7 +98,6 @@ nav {
   font-size: 16px;
   font-weight: 600;
   display: flex;
-  height: 60px;
   margin-left: 20px;
   padding: 12px 20px;
   justify-content: center;
@@ -120,6 +112,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .section-artist-cards header {
@@ -148,6 +141,7 @@ nav {
     /* Body Text- Work Sans */
   font-size: 22px;
   font-weight: 400;
+  text-align: center;
   line-height: 160%; /* 35.2px */
   text-transform: capitalize;
 }
@@ -156,11 +150,30 @@ nav {
   color: #fff;
   height: 60px;
   padding: 12px 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   border-radius: 20px;
   background: var(--call-to-action, #A259FF);
+}
+
+.highlight{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlighted-nft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.highlightimg{
+  width: 80%;
 }
 
 .info-card {
@@ -204,12 +217,8 @@ nav {
 
 
 .btn-artist-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  height: 60px;
-  padding: 0px 50px;
+  padding: 12px 20px;
+  text-align: center;
   border: 2px solid #a259ff;
   border-radius: 20px;
   font-size: 16px;
@@ -295,4 +304,40 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
+}
+
+
+@media (max-width: 900px) {
+  .info-card {
+    display: flex;
+    width: auto;
+  }
+
+  nav a{
+    font-size: .725em;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 5px;
+  }
+
+  .btn-sign-up{
+    margin-left: 5px;
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+
+  .logo {
+
+    height: 20px;
+  }
+  
+  .icon-logo-text {
+    height: 15px;
+  }
+
 }

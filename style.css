@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   color: #ffffff;
@@ -19,13 +26,18 @@ body {
 
 .section-hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 30px;
+  height: 100vh;
   padding: 80px 0;
+  margin-bottom: 100px;
 }
 
 .hero-text {
   max-width: 510px;
+  text-align: center;
 }
 
 
@@ -37,26 +49,38 @@ h1 {
 
 button {
   cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
 }
 
 nav a {
-
   color: #FFF;
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; /* 22.4px */
+  text-align: center;
+  text-decoration: none;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+  &&:hover{
+    color: #A259FF;
+  }
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1410px;
   padding: 20px 0;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1410px;
 }
 
 .logo {
@@ -81,13 +105,14 @@ nav {
   font-size: 16px;
   font-weight: 600;
   display: flex;
-height: 60px;
-padding: 0px 30px;
-justify-content: center;
-align-items: center;
-gap: 12px;
-border-radius: 20px;
-background: var(--call-to-action, #A259FF);
+  height: 60px;
+  margin-left: 20px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: var(--call-to-action, #A259FF);
 }
 
 .section-artist-cards {
@@ -113,29 +138,29 @@ background: var(--call-to-action, #A259FF);
 
 .hero-text h1 {
   margin-bottom:20px ;
-font-size: 67px;
-font-weight: 600;
-line-height: 110%; /* 73.7px */
-text-transform: capitalize;
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 110%; /* 73.7px */
+  text-transform: capitalize;
 }
 
 .hero-text p {
-  /* Body Text- Work Sans */
-font-size: 22px;
-font-weight: 400;
-line-height: 160%; /* 35.2px */
-text-transform: capitalize;
+    /* Body Text- Work Sans */
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
 }
+
 .btn-get-started {
-  display: flex;
   color: #fff;
-height: 60px;
-padding: 0px 50px;
-justify-content: center;
-align-items: center;
-gap: 12px;
-border-radius: 20px;
-background: var(--call-to-action, #A259FF);
+  height: 60px;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: var(--call-to-action, #A259FF);
 }
 
 .info-card {
